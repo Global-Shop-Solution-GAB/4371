@@ -1,0 +1,689 @@
+Program.Sub.ScreenSU.Start
+Gui.F_INV_ADDL_FIELDS..create
+Gui.F_INV_ADDL_FIELDS..caption("Additional Inventory Fields")
+Gui.F_INV_ADDL_FIELDS..size(8370,4830)
+Gui.F_INV_ADDL_FIELDS..position(0,0)
+Gui.F_INV_ADDL_FIELDS..event(UnLoad,f_inv_addl_fields_unload)
+Gui.F_INV_ADDL_FIELDS..alwaysontop(False)
+Gui.F_INV_ADDL_FIELDS..fontname("Arial")
+Gui.F_INV_ADDL_FIELDS..fontsize(8)
+Gui.F_INV_ADDL_FIELDS..forecolor(0)
+Gui.F_INV_ADDL_FIELDS..fontstyle()
+Gui.F_INV_ADDL_FIELDS..BackColor(-2147483633)
+Gui.F_INV_ADDL_FIELDS..controlbox(True)
+Gui.F_INV_ADDL_FIELDS..maxbutton(False)
+Gui.F_INV_ADDL_FIELDS..minbutton(True)
+Gui.F_INV_ADDL_FIELDS..mousepointer(0)
+Gui.F_INV_ADDL_FIELDS..moveable(True)
+Gui.F_INV_ADDL_FIELDS..sizeable(False)
+Gui.F_INV_ADDL_FIELDS..ShowInTaskBar(True)
+Gui.F_INV_ADDL_FIELDS..titlebar(True)
+Gui.F_INV_ADDL_FIELDS..MinX(0)
+Gui.F_INV_ADDL_FIELDS..MinY(0)
+Gui.F_INV_ADDL_FIELDS.frameType.create(frame)
+Gui.F_INV_ADDL_FIELDS.frameType.caption("")
+Gui.F_INV_ADDL_FIELDS.frameType.size(2190,240)
+Gui.F_INV_ADDL_FIELDS.frameType.position(4500,1000)
+Gui.F_INV_ADDL_FIELDS.frameType.visible(True)
+Gui.F_INV_ADDL_FIELDS.frameType.borderstyle(0)
+Gui.F_INV_ADDL_FIELDS.frameType.fontname("Arial")
+Gui.F_INV_ADDL_FIELDS.frameType.fontsize(8)
+Gui.F_INV_ADDL_FIELDS.txtCustomer.create(textbox,"",True,2200,300,0,200,1000,True,0,Arial,8,-2147483643,1)
+Gui.F_INV_ADDL_FIELDS.txtCustomer.maxLength(20)
+Gui.F_INV_ADDL_FIELDS.lbl13_User.create(label,"User Field 13",True,1935,255,1,200,3200,True,0,Arial,8,-2147483633,0)
+Gui.F_INV_ADDL_FIELDS.lblPart.create(label,"Part",True,1935,255,1,195,195,True,0,Arial,8,-2147483633,0)
+Gui.F_INV_ADDL_FIELDS.txtPart.create(textbox,"",True,2505,300,0,195,405,False,0,Arial,8,-2147483643,1)
+Gui.F_INV_ADDL_FIELDS.lblLoc.create(label,"Loc",True,585,255,1,3930,180,True,0,Arial,8,-2147483633,0)
+Gui.F_INV_ADDL_FIELDS.txtLoc.create(textbox,"",True,495,300,0,3960,405,False,0,Arial,8,-2147483643,1)
+Gui.F_INV_ADDL_FIELDS.chkServicePart.create(checkbox)
+Gui.F_INV_ADDL_FIELDS.chkServicePart.caption("Service Part?")
+Gui.F_INV_ADDL_FIELDS.chkServicePart.visible(True)
+Gui.F_INV_ADDL_FIELDS.chkServicePart.size(1530,255)
+Gui.F_INV_ADDL_FIELDS.chkServicePart.zorder(0)
+Gui.F_INV_ADDL_FIELDS.chkServicePart.position(6800,1000)
+Gui.F_INV_ADDL_FIELDS.chkServicePart.enabled(True)
+Gui.F_INV_ADDL_FIELDS.chkServicePart.alignment(0)
+Gui.F_INV_ADDL_FIELDS.chkServicePart.fontname("Arial")
+Gui.F_INV_ADDL_FIELDS.chkServicePart.fontsize(8)
+Gui.F_INV_ADDL_FIELDS.txt15_User.create(textbox,"",True,2550,300,0,5550,3400,True,0,Arial,8,-2147483643,1)
+Gui.F_INV_ADDL_FIELDS.txt15_User.maxLength(50)
+Gui.F_INV_ADDL_FIELDS.lbl4.create(label,"Customer",True,1935,255,1,200,800,True,0,Arial,8,-2147483633,0)
+Gui.F_INV_ADDL_FIELDS.lbl4_User.create(label,"User Field 4",True,1935,255,1,6600,1400,True,0,Arial,8,-2147483633,0)
+Gui.F_INV_ADDL_FIELDS.lbl6_User.create(label,"User Field 6",True,1410,255,1,1800,1995,True,0,Arial,8,-2147483633,0)
+Gui.F_INV_ADDL_FIELDS.txt10_User.create(textbox,"",True,2550,300,0,200,2800,True,0,Arial,8,-2147483643,1)
+Gui.F_INV_ADDL_FIELDS.txt10_User.maxLength(50)
+Gui.F_INV_ADDL_FIELDS.lbl2_User.create(label,"User Field 2",True,1500,255,1,3405,1395,True,0,Arial,8,-2147483633,0)
+Gui.F_INV_ADDL_FIELDS.txt7_User.create(textbox,"0.00",True,1500,300,0,3400,2200,True,0,Arial,8,-2147483643,1)
+Gui.F_INV_ADDL_FIELDS.txt7_User.numericonly(1)
+Gui.F_INV_ADDL_FIELDS.txt7_User.maxLength(15)
+Gui.F_INV_ADDL_FIELDS.lbl3_User.create(label,"User Field 3",True,1320,255,1,4995,1395,True,0,Arial,8,-2147483633,0)
+Gui.F_INV_ADDL_FIELDS.lbl9_User.create(label,"User Field 9",True,1935,255,1,6600,2000,True,0,Arial,8,-2147483633,0)
+Gui.F_INV_ADDL_FIELDS.lblGLAccount.create(label,"GL Account",True,1935,255,1,2900,800,True,0,Arial,8,-2147483633,0)
+Gui.F_INV_ADDL_FIELDS.lbl1_User.create(label,"User Field 1",True,1530,255,1,1800,1395,True,0,Arial,8,-2147483633,0)
+Gui.F_INV_ADDL_FIELDS.txt14_User.create(textbox,"",True,2600,300,0,2850,3400,True,0,Arial,8,-2147483643,1)
+Gui.F_INV_ADDL_FIELDS.txt14_User.maxLength(50)
+Gui.F_INV_ADDL_FIELDS.txt9_User.create(textbox,"0.00",True,1500,300,0,6600,2200,True,0,Arial,8,-2147483643,1)
+Gui.F_INV_ADDL_FIELDS.txt9_User.numericonly(1)
+Gui.F_INV_ADDL_FIELDS.txt9_User.maxLength(15)
+Gui.F_INV_ADDL_FIELDS.txt6_User.create(textbox,"0.00",True,1500,300,0,1800,2200,True,0,Arial,8,-2147483643,1)
+Gui.F_INV_ADDL_FIELDS.txt6_User.numericonly(1)
+Gui.F_INV_ADDL_FIELDS.txt6_User.maxLength(15)
+Gui.F_INV_ADDL_FIELDS.txt8_User.create(textbox,"0.00",True,1500,300,0,5000,2200,True,0,Arial,8,-2147483643,1)
+Gui.F_INV_ADDL_FIELDS.txt8_User.numericonly(1)
+Gui.F_INV_ADDL_FIELDS.txt8_User.maxLength(15)
+Gui.F_INV_ADDL_FIELDS.txtGLAccount.create(textbox,"",True,1300,300,0,2800,1000,True,0,Arial,8,-2147483643,1)
+Gui.F_INV_ADDL_FIELDS.lblShipDate.create(label,"First Shipped Date",True,1575,255,1,195,1395,True,0,Arial,8,-2147483633,0)
+Gui.F_INV_ADDL_FIELDS.lbl12_User.create(label,"User Field 12",True,1935,255,1,5550,2600,True,0,Arial,8,-2147483633,0)
+Gui.F_INV_ADDL_FIELDS.lbl10_User.create(label,"User Field 10",True,1935,255,1,200,2600,True,0,Arial,8,-2147483633,0)
+Gui.F_INV_ADDL_FIELDS.lbl5_User.create(label,"User Field 5",True,1440,255,1,195,1995,True,0,Arial,8,-2147483633,0)
+Gui.F_INV_ADDL_FIELDS.lbl8_User.create(label,"User Field 8",True,1470,255,1,4995,1995,True,0,Arial,8,-2147483633,0)
+Gui.F_INV_ADDL_FIELDS.lbl15_User.create(label,"User Field 15",True,1935,255,1,5550,3200,True,0,Arial,8,-2147483633,0)
+Gui.F_INV_ADDL_FIELDS.dtp2_User.create(datepicker)
+Gui.F_INV_ADDL_FIELDS.dtp2_User.visible(True)
+Gui.F_INV_ADDL_FIELDS.dtp2_User.size(1500,300)
+Gui.F_INV_ADDL_FIELDS.dtp2_User.zorder(0)
+Gui.F_INV_ADDL_FIELDS.dtp2_User.position(3400,1600)
+Gui.F_INV_ADDL_FIELDS.dtp2_User.enabled(True)
+Gui.F_INV_ADDL_FIELDS.dtpShipDate.create(datepicker)
+Gui.F_INV_ADDL_FIELDS.dtpShipDate.visible(True)
+Gui.F_INV_ADDL_FIELDS.dtpShipDate.size(1500,300)
+Gui.F_INV_ADDL_FIELDS.dtpShipDate.zorder(0)
+Gui.F_INV_ADDL_FIELDS.dtpShipDate.position(200,1600)
+Gui.F_INV_ADDL_FIELDS.dtpShipDate.enabled(True)
+Gui.F_INV_ADDL_FIELDS.dtp1_User.create(datepicker)
+Gui.F_INV_ADDL_FIELDS.dtp1_User.visible(True)
+Gui.F_INV_ADDL_FIELDS.dtp1_User.size(1500,300)
+Gui.F_INV_ADDL_FIELDS.dtp1_User.zorder(0)
+Gui.F_INV_ADDL_FIELDS.dtp1_User.position(1800,1600)
+Gui.F_INV_ADDL_FIELDS.dtp1_User.enabled(True)
+Gui.F_INV_ADDL_FIELDS.dtp3_User.create(datepicker)
+Gui.F_INV_ADDL_FIELDS.dtp3_User.visible(True)
+Gui.F_INV_ADDL_FIELDS.dtp3_User.size(1500,300)
+Gui.F_INV_ADDL_FIELDS.dtp3_User.zorder(0)
+Gui.F_INV_ADDL_FIELDS.dtp3_User.position(5000,1600)
+Gui.F_INV_ADDL_FIELDS.dtp3_User.enabled(True)
+Gui.F_INV_ADDL_FIELDS.dtp4_User.create(datepicker)
+Gui.F_INV_ADDL_FIELDS.dtp4_User.visible(True)
+Gui.F_INV_ADDL_FIELDS.dtp4_User.size(1500,300)
+Gui.F_INV_ADDL_FIELDS.dtp4_User.zorder(0)
+Gui.F_INV_ADDL_FIELDS.dtp4_User.position(6600,1600)
+Gui.F_INV_ADDL_FIELDS.dtp4_User.enabled(True)
+Gui.F_INV_ADDL_FIELDS.lbl14_User.create(label,"User Field 14",True,1935,255,1,2850,3200,True,0,Arial,8,-2147483633,0)
+Gui.F_INV_ADDL_FIELDS.lbl11_User.create(label,"User Field 11",True,1935,255,1,2850,2600,True,0,Arial,8,-2147483633,0)
+Gui.F_INV_ADDL_FIELDS.lbl7_User.create(label,"User Field 7",True,1065,255,1,3405,1995,True,0,Arial,8,-2147483633,0)
+Gui.F_INV_ADDL_FIELDS.cmdCustomer.create(button)
+Gui.F_INV_ADDL_FIELDS.cmdCustomer.caption("^")
+Gui.F_INV_ADDL_FIELDS.cmdCustomer.visible(True)
+Gui.F_INV_ADDL_FIELDS.cmdCustomer.size(300,300)
+Gui.F_INV_ADDL_FIELDS.cmdCustomer.zorder(0)
+Gui.F_INV_ADDL_FIELDS.cmdCustomer.position(2400,1000)
+Gui.F_INV_ADDL_FIELDS.cmdCustomer.enabled(True)
+Gui.F_INV_ADDL_FIELDS.cmdCustomer.fontname("Arial")
+Gui.F_INV_ADDL_FIELDS.cmdCustomer.fontsize(8)
+Gui.F_INV_ADDL_FIELDS.cmdCustomer.event(Click,cmdcustomer_click)
+Gui.F_INV_ADDL_FIELDS.cmdGLAccount.create(button)
+Gui.F_INV_ADDL_FIELDS.cmdGLAccount.caption("^")
+Gui.F_INV_ADDL_FIELDS.cmdGLAccount.visible(True)
+Gui.F_INV_ADDL_FIELDS.cmdGLAccount.size(300,300)
+Gui.F_INV_ADDL_FIELDS.cmdGLAccount.zorder(0)
+Gui.F_INV_ADDL_FIELDS.cmdGLAccount.position(4100,1000)
+Gui.F_INV_ADDL_FIELDS.cmdGLAccount.enabled(True)
+Gui.F_INV_ADDL_FIELDS.cmdGLAccount.fontname("Arial")
+Gui.F_INV_ADDL_FIELDS.cmdGLAccount.fontsize(8)
+Gui.F_INV_ADDL_FIELDS.cmdGLAccount.event(Click,cmdglaccount_click)
+Gui.F_INV_ADDL_FIELDS.txt11_User.create(textbox,"",True,2600,300,0,2850,2800,True,0,Arial,8,-2147483643,1)
+Gui.F_INV_ADDL_FIELDS.txt11_User.maxLength(50)
+Gui.F_INV_ADDL_FIELDS.txt12_User.create(textbox,"",True,2550,300,0,5550,2800,True,0,Arial,8,-2147483643,1)
+Gui.F_INV_ADDL_FIELDS.txt12_User.maxLength(50)
+Gui.F_INV_ADDL_FIELDS.txt13_User.create(textbox,"",True,2550,300,0,200,3400,True,0,Arial,8,-2147483643,1)
+Gui.F_INV_ADDL_FIELDS.txt13_User.maxLength(50)
+Gui.F_INV_ADDL_FIELDS.txt5_User.create(textbox,"0.00",True,1500,300,0,200,2200,True,0,Arial,8,-2147483643,1)
+Gui.F_INV_ADDL_FIELDS.txt5_User.numericonly(1)
+Gui.F_INV_ADDL_FIELDS.txt5_User.maxLength(15)
+Gui.F_INV_ADDL_FIELDS.cmdSave.create(button)
+Gui.F_INV_ADDL_FIELDS.cmdSave.caption("Save")
+Gui.F_INV_ADDL_FIELDS.cmdSave.visible(True)
+Gui.F_INV_ADDL_FIELDS.cmdSave.size(1000,375)
+Gui.F_INV_ADDL_FIELDS.cmdSave.zorder(0)
+Gui.F_INV_ADDL_FIELDS.cmdSave.position(200,3800)
+Gui.F_INV_ADDL_FIELDS.cmdSave.enabled(True)
+Gui.F_INV_ADDL_FIELDS.cmdSave.fontname("Arial")
+Gui.F_INV_ADDL_FIELDS.cmdSave.fontsize(8)
+Gui.F_INV_ADDL_FIELDS.cmdSave.event(Click,cmdsave_click)
+Gui.F_INV_ADDL_FIELDS.chkConsignment.create(checkbox)
+Gui.F_INV_ADDL_FIELDS.chkConsignment.caption("Consignment")
+Gui.F_INV_ADDL_FIELDS.chkConsignment.visible(True)
+Gui.F_INV_ADDL_FIELDS.chkConsignment.size(1275,255)
+Gui.F_INV_ADDL_FIELDS.chkConsignment.zorder(0)
+Gui.F_INV_ADDL_FIELDS.chkConsignment.position(4500,1000)
+Gui.F_INV_ADDL_FIELDS.chkConsignment.enabled(True)
+Gui.F_INV_ADDL_FIELDS.chkConsignment.alignment(0)
+Gui.F_INV_ADDL_FIELDS.chkConsignment.fontname("Arial")
+Gui.F_INV_ADDL_FIELDS.chkConsignment.fontsize(8)
+Gui.F_INV_ADDL_FIELDS.chkKanban.create(checkbox)
+Gui.F_INV_ADDL_FIELDS.chkKanban.caption("Kanban")
+Gui.F_INV_ADDL_FIELDS.chkKanban.visible(True)
+Gui.F_INV_ADDL_FIELDS.chkKanban.size(915,255)
+Gui.F_INV_ADDL_FIELDS.chkKanban.zorder(0)
+Gui.F_INV_ADDL_FIELDS.chkKanban.position(5800,1000)
+Gui.F_INV_ADDL_FIELDS.chkKanban.enabled(True)
+Gui.F_INV_ADDL_FIELDS.chkKanban.alignment(0)
+Gui.F_INV_ADDL_FIELDS.chkKanban.fontname("Arial")
+Gui.F_INV_ADDL_FIELDS.chkKanban.fontsize(8)
+Gui.F_INV_ADDL_FIELDS.txtRev.Create(TextBox,"",True,735,300,0,2970,405,False,0,"Arial",8,-2147483643,1)
+Gui.F_INV_ADDL_FIELDS.lblRev.Create(Label,"Rev",True,705,255,0,2940,180,True,0,"Arial",8,-2147483633,0)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'BN modified from ATG_INV_ADDL_FIELDS. Feb 3, 2017
+'Mike Slamen wants that:
+'when user click the button "Addl Fields" of Inventory Master for a particular part, it looks into the ATG_INV_ADDL_FIELDS table to see if it exists. 
+'''if exists, get all data of that particular part and put in the form
+'''if it does not exits, it will take the data from a part of the same family if there are parts of the same family exists in the ATG_INV_ADDL_FIELDS, and put in the form.
+'when user click save, it ONLY save to that particular part, NOT to every part of the same family
+
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+
+v.Local..BulkDeclareString(sError, sPart17, sRev, sLoc)
+
+'Inventory populate - 12010
+F.Intrinsic.Control.If(V.Caller.Hook,=,"10120")
+	V.Passed.000068.Set("Addl Fields")
+	F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndIf
+
+'Inventory Script
+F.Intrinsic.Control.If(V.Caller.Hook,=,"10210")
+	V.local.sPart17.Set(V.Passed.000007)
+	v.Local.srev.Set(v.Passed.000008)
+	V.Local.sLoc.Set(V.Passed.000009)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(V.Local.sPart17,=,"")
+	F.Intrinsic.UI.Msgbox("Please select a part.")
+	F.Intrinsic.Control.End
+
+F.Intrinsic.Control.EndIf
+
+Gui.F_INV_ADDL_FIELDS.cmdSave.Enabled(False)
+Gui.F_INV_ADDL_FIELDS.cmdCustomer.Enabled(False)
+Gui.F_INV_ADDL_FIELDS.cmdGLAccount.Enabled(False)
+Gui.F_INV_ADDL_FIELDS..Enabled(False)
+
+F.ODBC.Connection!conx.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+Gui.F_INV_ADDL_FIELDS..Show
+
+F.Intrinsic.Control.CallSub("PopulateNames")
+
+Gui.F_INV_ADDL_FIELDS.txtPart.Text(V.Local.sPart17)
+Gui.F_INV_ADDL_FIELDS.txtLoc.Text(V.Local.sLoc)
+gui.F_INV_ADDL_FIELDS.txtRev.text(v.Local.srev)
+
+F.Intrinsic.Control.CallSub("Load")
+Gui.F_INV_ADDL_FIELDS.cmdSave.Enabled(True)
+Gui.F_INV_ADDL_FIELDS.cmdCustomer.Enabled(True)
+Gui.F_INV_ADDL_FIELDS.cmdGLAccount.Enabled(True)
+Gui.F_INV_ADDL_FIELDS..Enabled(True)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: ATG_INV_ADDL_FIELDS_todevFromCustomer.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.Main.End
+
+Program.Sub.f_inv_addl_fields_unload.Start
+F.Intrinsic.Control.SetErrorHandler("f_inv_addl_fields_unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+F.ODBC.Connection!conx.Close
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("f_inv_addl_fields_unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: ATG_INV_ADDL_FIELDS_todevFromCustomer.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.f_inv_addl_fields_unload.End
+
+Program.Sub.cmdsave_click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdsave_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+Gui.F_INV_ADDL_FIELDS.cmdCustomer.Enabled(False)
+Gui.F_INV_ADDL_FIELDS.cmdGLAccount.Enabled(False)
+Gui.F_INV_ADDL_FIELDS.cmdSave.Enabled(False)
+Gui.F_INV_ADDL_FIELDS..Enabled(False)
+
+F.Intrinsic.Control.CallSub("Save")
+
+Gui.F_INV_ADDL_FIELDS.cmdCustomer.Enabled(True)
+Gui.F_INV_ADDL_FIELDS.cmdGLAccount.Enabled(True)
+Gui.F_INV_ADDL_FIELDS.cmdSave.Enabled(True)
+gui.F_INV_ADDL_FIELDS..Enabled(True)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdsave_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: ATG_INV_ADDL_FIELDS_todevFromCustomer.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.cmdsave_click.End
+
+Program.Sub.cmdcustomer_click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdcustomer_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+v.Local..BulkDeclareString(sError, sCol, sColW, sQuery, sRet)
+
+F.Intrinsic.String.Split("Customer Name*!*Customer ID","*!*",V.Local.sCol)
+F.Intrinsic.String.Split("2750*!*1000","*!*",V.Local.sColW)
+V.Local.sQuery.Set("SELECT NAME_CUSTOMER, CUSTOMER FROM V_CUSTOMER_MASTER ORDER BY NAME_CUSTOMER")
+
+F.Intrinsic.UI.Browser("Select a Customer","conx",V.Local.sQuery,V.Local.sCol,V.Local.sColW,5000,5000,V.Local.sRet)
+
+F.Intrinsic.Control.If(V.Local.sRet,"<>","***CANCEL***")
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.F_INV_ADDL_FIELDS.txtCustomer.Text(V.Local.sRet(0))
+	Gui.F_INV_ADDL_FIELDS.txtCustomer.SetMetaData(V.Local.sRet(0),V.Local.sRet(1))
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdcustomer_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: ATG_INV_ADDL_FIELDS_todevFromCustomer.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.cmdcustomer_click.End
+
+Program.Sub.txtglaccount_click.Start
+Program.Sub.txtglaccount_click.End
+
+Program.Sub.cmdglaccount_click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdglaccount_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+v.Local..BulkDeclareString(sError, sCol, sColW, sQuery, sRet)
+
+F.Intrinsic.String.Split("GL Account Name*!*GL Account No.  ","*!*",V.Local.sCol)
+F.Intrinsic.String.Split("2750*!*1250","*!*",V.Local.sColW)
+'V.Local.sQuery.Set("SELECT DESCR, GL_ACCOUNT FROM V_GL_MASTER ORDER BY DESCR asc")
+V.Local.sQuery.Set("SELECT DESC_ACCOUNT, GL_ACCOUNT FROM V_GL_MASTER ORDER BY DESC_ACCOUNT asc")
+
+F.Intrinsic.UI.Browser("Select a Customer","conx",V.Local.sQuery,V.Local.sCol,V.Local.sColW,5000,5000,V.Local.sRet)
+
+F.Intrinsic.Control.If(V.Local.sRet,"<>","***CANCEL***")
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.F_INV_ADDL_FIELDS.txtGLAccount.Text(V.Local.sRet(1))
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdglaccount_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: ATG_INV_ADDL_FIELDS_todevFromCustomer.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.cmdglaccount_click.End
+
+Program.Sub.Load.Start
+
+F.Intrinsic.Control.SetErrorHandler("Load_Err")
+F.Intrinsic.Control.ClearErrors
+
+v.Local..BulkDeclareString(sError, sQuery, sNum, sPart20, sPart17)
+v.Local.iSameFamilyCount.Declare(long)
+
+v.Local.sPart17.Set(v.Screen.F_INV_ADDL_FIELDS!txtPart.Text)
+f.Intrinsic.String.RPad(v.Local.sPart17," ",17, v.Local.sPart17)
+Function.Intrinsic.String.GSSPartString(V.Screen.F_INV_ADDL_FIELDS!txtPart.Text,V.Screen.F_INV_ADDL_FIELDS!txtRev.Text,v.Local.sPart20)
+
+F.Intrinsic.String.Concat("Select * from ATG_INV_ADDL_FIELDS WHERE PART='",v.Local.sPart20,"' AND LOC='",V.Screen.F_INV_ADDL_FIELDS!txtLoc.Text,"'",V.Local.sQuery)
+F.ODBC.connection!conx.OpenRecordsetRW("rstLoad",V.Local.sQuery)
+F.Intrinsic.Control.If(V.ODBC.conx!rstLoad.EOF,=,True)
+'This part does not exist in the table ATG_INV_ADDL_FIELDS
+	'Check to see if there are any parts of the same family with different rev in the ATG_INV_ADDL_FIELDS
+	f.Intrinsic.String.Concat("Select count(*) from ATG_INV_ADDL_FIELDS where part like '", v.Local.sPart17,"%' AND LOC='",V.Screen.F_INV_ADDL_FIELDS!txtLoc.Text,"'",V.Local.sQuery)
+	f.ODBC.Connection!conx.ExecuteAndReturn(v.Local.sQuery,v.Local.iSameFamilyCount)
+	
+	f.Intrinsic.Control.If(v.Local.iSameFamilyCount,=,0)
+	'This is completely a new part without any part of the same family in the ATG_INV_ADDL_FIELDS. We initialize it with the values from the V_Order_Hist_Line
+		
+		F.Intrinsic.String.Concat("Select TOP 1* from V_ORDER_HIST_LINE WHERE PART='",v.Local.sPart20,"' AND LOCATION='",V.Screen.F_INV_ADDL_FIELDS!txtLoc.text,"' Order by DATE_SHIPPED ASC",V.Local.sQuery)
+		F.ODBC.Connection!conx.OpenRecordsetRO("rstShipDate",V.Local.sQuery)
+		
+		F.Intrinsic.Control.If(V.ODBC.conx!rstShipDate.EOF,<>,True)
+			Gui.F_INV_ADDL_FIELDS.dtpShipDate.Value(V.ODBC.conx!rstShipDate.FieldValPervasiveDate!DATE_SHIPPED)
+		F.Intrinsic.Control.Else
+			Gui.F_INV_ADDL_FIELDS.dtpShipDate.Value(V.Ambient.Now)
+		F.Intrinsic.Control.EndIf
+		
+		F.ODBC.conx!rstShipDate.Close
+		
+		Gui.F_INV_ADDL_FIELDS.dtp1_User.Value(V.Ambient.Now)
+		Gui.F_INV_ADDL_FIELDS.dtp2_User.Value(V.Ambient.Now)
+		Gui.F_INV_ADDL_FIELDS.dtp3_User.Value(V.Ambient.Now)
+		Gui.F_INV_ADDL_FIELDS.dtp4_User.Value(V.Ambient.Now)		
+		
+	f.Intrinsic.Control.Else
+	'There is a part of the same family in the ATG_INV_ADDL_FIELDS		
+		F.Intrinsic.String.Concat("Select Top 1* from ATG_INV_ADDL_FIELDS WHERE PART like '",v.Local.sPart17,"%' AND LOC='",V.Screen.F_INV_ADDL_FIELDS!txtLoc.Text,"' order by Part asc",V.Local.sQuery)
+		F.ODBC.connection!conx.OpenRecordsetRW("rstLoadParent",V.Local.sQuery)
+		
+		F.Intrinsic.Control.If(V.ODBC.conx!rstLoadParent.EOF,<>,True)
+			F.Intrinsic.Control.If(V.ODBC.conx!rstLoadParent.FieldValTrim!SERVICE_PART,=,True)
+				Gui.F_INV_ADDL_FIELDS.chkServicePart.Value(1)
+			F.Intrinsic.Control.else
+				Gui.F_INV_ADDL_FIELDS.chkServicePart.Value(0)
+			F.Intrinsic.Control.endif
+			F.Intrinsic.Control.If(V.ODBC.conx!rstLoadParent.FieldValTrim!CONSIGNMENT,=,True)
+				Gui.F_INV_ADDL_FIELDS.chkConsignment.Value(1)
+			F.Intrinsic.Control.Else
+				Gui.F_INV_ADDL_FIELDS.chkConsignment.Value(0)
+			F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.If(V.ODBC.conx!rstLoadParent.FieldValTrim!KANBAN,=,True)
+				Gui.F_INV_ADDL_FIELDS.chkKANBAN.Value(1)
+			F.Intrinsic.Control.Else
+				Gui.F_INV_ADDL_FIELDS.chkKANBAN.Value(0)
+			F.Intrinsic.Control.EndIf
+			
+			F.Intrinsic.Control.CallSub("GetCustomer","sCust",V.ODBC.conx!rstLoadParent.FieldValTrim!CUSTOMER)		
+			Gui.F_INV_ADDL_FIELDS.txtCustomer.Text(V.Args.sCustomer)
+			Gui.F_INV_ADDL_FIELDS.txtCustomer.SetMetaData(V.Args.sCustomer,V.Args.sCustomerID)
+			Gui.F_INV_ADDL_FIELDS.txtGLAccount.Text(V.ODBC.conx!rstLoadParent.FieldValTrim!GL_ACCOUNT)
+			Gui.F_INV_ADDL_FIELDS.dtpShipDate.Value(V.ODBC.conx!rstLoadParent.FieldValTrim!FIRST_SHIPPED_DATE)
+			Gui.F_INV_ADDL_FIELDS.dtp1_User.Value(V.ODBC.conx!rstLoadParent.FieldValTrim!USER_1)
+			Gui.F_INV_ADDL_FIELDS.dtp2_User.Value(V.ODBC.conx!rstLoadParent.FieldValTrim!USER_2)
+			Gui.F_INV_ADDL_FIELDS.dtp3_User.Value(V.ODBC.conx!rstLoadParent.FieldValTrim!USER_3)
+			Gui.F_INV_ADDL_FIELDS.dtp4_User.Value(V.ODBC.conx!rstLoadParent.FieldValTrim!USER_4)
+			F.Intrinsic.String.Format(V.ODBC.conx!rstLoadParent.FieldValTrim!USER_5,"######0.00",V.local.sNum)
+			Gui.F_INV_ADDL_FIELDS.txt5_User.Text(V.Local.sNum)
+			F.Intrinsic.String.Format(V.ODBC.conx!rstLoadParent.FieldValTrim!USER_6,"######0.00",V.local.sNum)
+			Gui.F_INV_ADDL_FIELDS.txt6_User.Text(V.Local.sNum)
+			F.Intrinsic.String.Format(V.ODBC.conx!rstLoadParent.FieldValTrim!USER_7,"######0.00",V.local.sNum)
+			Gui.F_INV_ADDL_FIELDS.txt7_User.Text(V.Local.sNum)
+			F.Intrinsic.String.Format(V.ODBC.conx!rstLoadParent.FieldValTrim!USER_8,"######0.00",V.local.sNum)
+			Gui.F_INV_ADDL_FIELDS.txt8_User.Text(V.Local.sNum)
+			F.Intrinsic.String.Format(V.ODBC.conx!rstLoadParent.FieldValTrim!USER_9,"######0.00",V.local.sNum)
+			Gui.F_INV_ADDL_FIELDS.txt9_User.Text(V.Local.sNum)
+			gui.F_INV_ADDL_FIELDS.txt10_User.Text(V.ODBC.conx!rstLoadParent.FieldValTrim!USER_10)
+			gui.F_INV_ADDL_FIELDS.txt11_User.Text(V.ODBC.conx!rstLoadParent.FieldValTrim!USER_11)
+			gui.F_INV_ADDL_FIELDS.txt12_User.Text(V.ODBC.conx!rstLoadParent.FieldValTrim!USER_12)
+			gui.F_INV_ADDL_FIELDS.txt13_User.Text(V.ODBC.conx!rstLoadParent.FieldValTrim!USER_13)
+			gui.F_INV_ADDL_FIELDS.txt14_User.Text(V.ODBC.conx!rstLoadParent.FieldValTrim!USER_14)
+			gui.F_INV_ADDL_FIELDS.txt15_User.Text(V.ODBC.conx!rstLoadParent.FieldValTrim!USER_15)
+			
+		F.Intrinsic.Control.EndIf
+
+		F.ODBC.conx!rstLoadParent.Close	
+		
+	f.Intrinsic.Control.EndIf
+	
+F.Intrinsic.Control.Else
+'This part exists in the table ATG_INV_ADDL_FIELDS
+	F.Intrinsic.Control.If(V.ODBC.conx!rstLoad.FieldValTrim!SERVICE_PART,=,True)
+		Gui.F_INV_ADDL_FIELDS.chkServicePart.Value(1)
+	F.Intrinsic.Control.else
+		Gui.F_INV_ADDL_FIELDS.chkServicePart.Value(0)
+	F.Intrinsic.Control.endif
+	F.Intrinsic.Control.If(V.ODBC.conx!rstLoad.FieldValTrim!CONSIGNMENT,=,True)
+		Gui.F_INV_ADDL_FIELDS.chkConsignment.Value(1)
+	F.Intrinsic.Control.Else
+		Gui.F_INV_ADDL_FIELDS.chkConsignment.Value(0)
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.If(V.ODBC.conx!rstLoad.FieldValTrim!KANBAN,=,True)
+		Gui.F_INV_ADDL_FIELDS.chkKANBAN.Value(1)
+	F.Intrinsic.Control.Else
+		Gui.F_INV_ADDL_FIELDS.chkKANBAN.Value(0)
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.CallSub("GetCustomer","sCust",V.ODBC.conx!rstLoad.FieldValTrim!CUSTOMER)
+	Gui.F_INV_ADDL_FIELDS.txtCustomer.Text(V.Args.sCustomer)
+	Gui.F_INV_ADDL_FIELDS.txtCustomer.SetMetaData(V.Args.sCustomer,V.Args.sCustomerID)
+	Gui.F_INV_ADDL_FIELDS.txtGLAccount.Text(V.ODBC.conx!rstLoad.FieldValTrim!GL_ACCOUNT)
+	Gui.F_INV_ADDL_FIELDS.dtpShipDate.Value(V.ODBC.conx!rstLoad.FieldValTrim!FIRST_SHIPPED_DATE)
+	Gui.F_INV_ADDL_FIELDS.dtp1_User.Value(V.ODBC.conx!rstLoad.FieldValTrim!USER_1)
+	Gui.F_INV_ADDL_FIELDS.dtp2_User.Value(V.ODBC.conx!rstLoad.FieldValTrim!USER_2)
+	Gui.F_INV_ADDL_FIELDS.dtp3_User.Value(V.ODBC.conx!rstLoad.FieldValTrim!USER_3)
+	Gui.F_INV_ADDL_FIELDS.dtp4_User.Value(V.ODBC.conx!rstLoad.FieldValTrim!USER_4)
+	F.Intrinsic.String.Format(V.ODBC.conx!rstLoad.FieldValTrim!USER_5,"######0.00",V.local.sNum)
+	Gui.F_INV_ADDL_FIELDS.txt5_User.Text(V.Local.sNum)
+	F.Intrinsic.String.Format(V.ODBC.conx!rstLoad.FieldValTrim!USER_6,"######0.00",V.local.sNum)
+	Gui.F_INV_ADDL_FIELDS.txt6_User.Text(V.Local.sNum)
+	F.Intrinsic.String.Format(V.ODBC.conx!rstLoad.FieldValTrim!USER_7,"######0.00",V.local.sNum)
+	Gui.F_INV_ADDL_FIELDS.txt7_User.Text(V.Local.sNum)
+	F.Intrinsic.String.Format(V.ODBC.conx!rstLoad.FieldValTrim!USER_8,"######0.00",V.local.sNum)
+	Gui.F_INV_ADDL_FIELDS.txt8_User.Text(V.Local.sNum)
+	F.Intrinsic.String.Format(V.ODBC.conx!rstLoad.FieldValTrim!USER_9,"######0.00",V.local.sNum)
+	Gui.F_INV_ADDL_FIELDS.txt9_User.Text(V.Local.sNum)
+	gui.F_INV_ADDL_FIELDS.txt10_User.Text(V.ODBC.conx!rstLoad.FieldValTrim!USER_10)
+	gui.F_INV_ADDL_FIELDS.txt11_User.Text(V.ODBC.conx!rstLoad.FieldValTrim!USER_11)
+	gui.F_INV_ADDL_FIELDS.txt12_User.Text(V.ODBC.conx!rstLoad.FieldValTrim!USER_12)
+	gui.F_INV_ADDL_FIELDS.txt13_User.Text(V.ODBC.conx!rstLoad.FieldValTrim!USER_13)
+	gui.F_INV_ADDL_FIELDS.txt14_User.Text(V.ODBC.conx!rstLoad.FieldValTrim!USER_14)
+	gui.F_INV_ADDL_FIELDS.txt15_User.Text(V.ODBC.conx!rstLoad.FieldValTrim!USER_15)
+F.Intrinsic.Control.EndIf
+
+F.ODBC.conx!rstLoad.Close
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Load_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: ATG_INV_ADDL_FIELDS_todevFromCustomer.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.Load.End
+
+Program.Sub.Save.Start
+F.Intrinsic.Control.SetErrorHandler("Save_Err")
+F.Intrinsic.Control.ClearErrors
+
+v.Local..BulkDeclareString(sError, sQuery, sPart20, sPart17)
+
+F.Intrinsic.Control.CallSub("CheckFields")
+
+F.Intrinsic.Control.If(V.Args.iInvalid,=,1)
+	F.Intrinsic.UI.Msgbox("Invalid fields")
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+Function.Intrinsic.String.GSSPartString(V.Screen.F_INV_ADDL_FIELDS!txtPart.Text,V.Screen.F_INV_ADDL_FIELDS!txtRev.Text,v.Local.sPart20)
+
+F.Intrinsic.String.Concat("Select * from ATG_INV_ADDL_FIELDS WHERE PART='",V.Local.sPart20,"' AND LOC='",V.Screen.F_INV_ADDL_FIELDS!txtLoc.text,"'",V.Local.sQuery)
+F.ODBC.Connection!conx.OpenRecordsetRW("rstSave",V.local.sQuery)
+
+F.Intrinsic.Control.If(V.ODBC.conx!rstSave.EOF,=,True)
+	F.ODBC.conx!rstSave.AddNew
+	F.ODBC.conx!rstSave.Set!PART(v.Local.sPart20)
+	F.ODBC.conx!rstSave.Set!LOC(V.Screen.F_INV_ADDL_FIELDS!txtLoc.Text)
+F.Intrinsic.Control.EndIf
+
+F.ODBC.conx!rstSave.Set!SERVICE_PART(V.Screen.F_INV_ADDL_FIELDS!chkServicePart.Value)
+F.ODBC.conx!rstSave.Set!CONSIGNMENT(V.Screen.F_INV_ADDL_FIELDS!chkConsignment.Value)
+f.ODBC.conx!rstSave.Set!KANBAN(V.Screen.F_INV_ADDL_FIELDS!chkKanban.Value)
+
+F.ODBC.conx!rstSave.Set!GL_ACCOUNT(V.Screen.F_INV_ADDL_FIELDS!txtGLAccount.Text)
+F.ODBC.conx!rstSave.Set!FIRST_SHIPPED_DATE(V.Screen.F_INV_ADDL_FIELDS!dtpShipDate.value)
+F.ODBC.conx!rstSave.Set!CUSTOMER(V.Screen.F_INV_ADDL_FIELDS!txtCustomer.MetaData1)
+F.ODBC.conx!rstSave.Set!USER_1(V.Screen.F_INV_ADDL_FIELDS!dtp1_User.Value)
+F.ODBC.conx!rstSave.Set!USER_2(V.Screen.F_INV_ADDL_FIELDS!dtp2_User.Value)
+F.ODBC.conx!rstSave.Set!USER_3(V.Screen.F_INV_ADDL_FIELDS!dtp3_User.Value)
+F.ODBC.conx!rstSave.Set!USER_4(V.Screen.F_INV_ADDL_FIELDS!dtp4_User.Value)
+F.ODBC.conx!rstSave.Set!USER_5(V.Screen.F_INV_ADDL_FIELDS!txt5_User.Text)
+F.ODBC.conx!rstSave.Set!USER_6(V.Screen.F_INV_ADDL_FIELDS!txt6_User.Text)
+F.ODBC.conx!rstSave.Set!USER_7(V.Screen.F_INV_ADDL_FIELDS!txt7_User.Text)
+F.ODBC.conx!rstSave.Set!USER_8(V.Screen.F_INV_ADDL_FIELDS!txt8_User.Text)
+F.ODBC.conx!rstSave.Set!USER_9(V.Screen.F_INV_ADDL_FIELDS!txt9_User.Text)
+F.ODBC.conx!rstSave.Set!USER_10(V.Screen.F_INV_ADDL_FIELDS!txt10_User.Text)
+F.ODBC.conx!rstSave.Set!USER_11(V.Screen.F_INV_ADDL_FIELDS!txt11_User.Text)
+F.ODBC.conx!rstSave.Set!USER_12(V.Screen.F_INV_ADDL_FIELDS!txt12_User.Text)
+F.ODBC.conx!rstSave.Set!USER_13(V.Screen.F_INV_ADDL_FIELDS!txt13_User.Text)
+F.ODBC.conx!rstSave.Set!USER_14(V.Screen.F_INV_ADDL_FIELDS!txt14_User.Text)
+F.ODBC.conx!rstSave.Set!USER_15(V.Screen.F_INV_ADDL_FIELDS!txt15_User.Text)
+
+F.ODBC.conx!rstSave.Update
+F.ODBC.conx!rstSave.Close
+
+F.Intrinsic.Control.CallSub("f_inv_addl_fields_unload")
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Save_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: ATG_INV_ADDL_FIELDS_todevFromCustomer.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.Save.End
+
+Program.Sub.CheckFields.Start
+F.Intrinsic.Control.SetErrorHandler("CheckFields_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iInvalidFields.Declare(Long,0)
+V.Local.bInvalid.Declare(Boolean,False)
+
+F.Intrinsic.Math.IsNumeric(V.Screen.F_INV_ADDL_FIELDS!txt5_User.Text,V.Local.bInvalid)
+F.Intrinsic.Control.If(V.Local.bInvalid,=,False)
+	V.Local.iInvalidFields.Set(1)
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Math.IsNumeric(V.Screen.F_INV_ADDL_FIELDS!txt6_User.Text,V.Local.bInvalid)
+F.Intrinsic.Control.If(V.Local.bInvalid,=,False)
+	V.Local.iInvalidFields.Set(1)
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Math.IsNumeric(V.Screen.F_INV_ADDL_FIELDS!txt7_User.Text,V.Local.bInvalid)
+F.Intrinsic.Control.If(V.Local.bInvalid,=,False)
+	V.Local.iInvalidFields.Set(1)
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Math.IsNumeric(V.Screen.F_INV_ADDL_FIELDS!txt8_User.Text,V.Local.bInvalid)
+F.Intrinsic.Control.If(V.Local.bInvalid,=,False)
+	V.Local.iInvalidFields.Set(1)
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Math.IsNumeric(V.Screen.F_INV_ADDL_FIELDS!txt9_User.Text,V.Local.bInvalid)
+F.Intrinsic.Control.If(V.Local.bInvalid,=,False)
+	V.Local.iInvalidFields.Set(1)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(V.Screen.F_INV_ADDL_FIELDS!txt5_User.Text,=,"")
+	V.Screen.F_INV_ADDL_FIELDS!txt5_User.Text(0.00)
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.If(V.Screen.F_INV_ADDL_FIELDS!txt6_User.Text,=,"")
+	V.Screen.F_INV_ADDL_FIELDS!txt6_User.Text(0.00)
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.If(V.Screen.F_INV_ADDL_FIELDS!txt7_User.Text,=,"")
+	V.Screen.F_INV_ADDL_FIELDS!txt7_User.Text(0.00)
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.If(V.Screen.F_INV_ADDL_FIELDS!txt8_User.Text,=,"")
+	V.Screen.F_INV_ADDL_FIELDS!txt8_User.Text(0.00)
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.If(V.Screen.F_INV_ADDL_FIELDS!txt9_User.Text,=,"")
+	V.Screen.F_INV_ADDL_FIELDS!txt9_User.Text(0.00)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.If(V.Screen.F_INV_ADDL_FIELDS!txtcustomer.Text,=,"")
+	Gui.F_INV_ADDL_FIELDS.txtCustomer.SetMetaData("",-1)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Variable.AddRV("iInvalid",V.Local.iInvalidFields)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("CheckFields_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: ATG_INV_ADDL_FIELDS_todevFromCustomer.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+Program.Sub.CheckFields.End
+
+Program.Sub.PopulateNames.Start
+F.Intrinsic.Control.SetErrorHandler("PopulateNames_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sQuery.Declare(String)
+
+F.ODBC.Connection!conx.OpenRecordsetRW("rstNames","select * from ATG_INV_FIELD_NAMES")
+
+F.Intrinsic.Control.If(V.ODBC.conx!rstNames.EOF,<>,True)
+	gui.F_INV_ADDL_FIELDS.lbl1_User.caption(V.ODBC.conx!rstNames.FieldValTrim!USER_1)
+	Gui.F_INV_ADDL_FIELDS.lbl2_User.caption(V.ODBC.conx!rstNames.FieldValTrim!USER_2)
+	Gui.F_INV_ADDL_FIELDS.lbl3_User.caption(V.ODBC.conx!rstNames.FieldValTrim!USER_3)
+	Gui.F_INV_ADDL_FIELDS.lbl4_User.caption(V.ODBC.conx!rstNames.FieldValTrim!USER_4)
+	Gui.F_INV_ADDL_FIELDS.lbl5_User.caption(V.ODBC.conx!rstNames.FieldValTrim!USER_5)
+	Gui.F_INV_ADDL_FIELDS.lbl6_User.caption(V.ODBC.conx!rstNames.FieldValTrim!USER_6)
+	Gui.F_INV_ADDL_FIELDS.lbl7_User.caption(V.ODBC.conx!rstNames.FieldValTrim!USER_7)
+	Gui.F_INV_ADDL_FIELDS.lbl8_User.caption(V.ODBC.conx!rstNames.FieldValTrim!USER_8)
+	Gui.F_INV_ADDL_FIELDS.lbl9_User.caption(V.ODBC.conx!rstNames.FieldValTrim!USER_9)
+	gui.F_INV_ADDL_FIELDS.lbl10_User.caption(V.ODBC.conx!rstNames.FieldValTrim!USER_10)
+	gui.F_INV_ADDL_FIELDS.lbl11_User.caption(V.ODBC.conx!rstNames.FieldValTrim!USER_11)
+	gui.F_INV_ADDL_FIELDS.lbl12_User.caption(V.ODBC.conx!rstNames.FieldValTrim!USER_12)
+	gui.F_INV_ADDL_FIELDS.lbl13_User.caption(V.ODBC.conx!rstNames.FieldValTrim!USER_13)
+	gui.F_INV_ADDL_FIELDS.lbl14_User.caption(V.ODBC.conx!rstNames.FieldValTrim!USER_14)
+	gui.F_INV_ADDL_FIELDS.lbl15_User.caption(V.ODBC.conx!rstNames.FieldValTrim!USER_15)
+F.Intrinsic.Control.EndIf
+
+F.ODBC.conx!rstNames.Close
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("PopulateNames_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: ATG_INV_ADDL_FIELDS_todevFromCustomer.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.PopulateNames.End
+
+Program.Sub.GetCustomer.Start
+F.Intrinsic.Control.SetErrorHandler("GetCustomer_Err")
+F.Intrinsic.Control.ClearErrors
+
+v.Local..BulkDeclareString(sError, sQuery, sCustomer, sCustomerID)
+
+F.Intrinsic.String.Concat("Select * from V_CUSTOMER_MASTER where CUSTOMER='",v.Args.sCust,"'",V.Local.sQuery)
+F.ODBC.connection!conx.OpenRecordsetRO("rstCust",V.Local.sQuery)
+
+F.Intrinsic.Control.If(V.ODBC.conx!rstCust.EOF,=,True)
+	V.Local.sCustomer.Set("")
+	V.Local.sCustomerID.Set("-1")
+F.Intrinsic.Control.Else
+	V.Local.sCustomer.Set(V.ODBC.conx!rstCust.FieldValTrim!NAME_CUSTOMER)
+	V.Local.sCustomerID.Set(V.ODBC.conx!rstCust.FieldValTrim!CUSTOMER)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Variable.AddRV("sCustomer",V.local.sCustomer)
+F.Intrinsic.Variable.AddRV("sCustomerID",V.local.sCustomerID)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("GetCustomer_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: ATG_INV_ADDL_FIELDS_todevFromCustomer.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.GetCustomer.End
+
+Program.Sub.Comments.Start
+${$0$}$$}$$}$12:00:00 AM$}$False
+${$3$}$0$}$$}$0$}$-1$}$$}$12:00:00 AM$}$Quote 4132
+TRT 
+This GAB will pull fields from SF into GS. 
+
+Program.Sub.Comments.End
